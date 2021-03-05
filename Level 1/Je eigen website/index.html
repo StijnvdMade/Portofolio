@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stijn's Page</title>
     <style>
-        .top {
-            background-color: black;
-        }
+      body {
+        margin: 0;
+      }
+      .top {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      .Stijn {
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        z-index: 1;
+      }
+      .text {
+        color: red;
+      }
+      .image-border {
+        height: 400px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        z-index: 2;
+        background-color: blue;
+      }
+      .image-border {
+        margin: 50px auto;
+        display: block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Safari and Chrome */
+        position: relative;
+
+        /* non-essential styling */
+        -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+      }
+      .image-border img {
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+        width: 200%;
+        position: absolute;
+        left: -100px;
+        top: -100px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="top">
-        <img src="" alt="">
+      <div class="image-border">
+        <img src="epic crop.png" alt="My Picture" class="Stijn" />
+      </div>
+      <br />
+      <h1 class="text">some text</h1>
     </div>
-</body>
+  </body>
 </html>
